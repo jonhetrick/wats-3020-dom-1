@@ -19,13 +19,13 @@ $(function() {
 
 			//set up toggle on check box click
 			//code to make this function get added to every :checkbox on the change event
-			$(":checkbox").change(function (event) {
-			  if ($(this).is(':checked')) {
-			    $(this).siblings("label").css("text-decoration", "line-through")
-			  } else {
-			    $(this).siblings("label").css("text-decoration", "none")
-			  }
-			}) // checkbox event function
+			$(':checkbox').change(function(event) {
+				if ($(this).is(':checked')) {
+					$(this).siblings('label').css('text-decoration', 'line-through');
+				} else {
+					$(this).siblings('label').css('text-decoration', 'none');
+				}
+			}); // checkbox event function
 		}
 	}); // form submit
 }); // document ready
